@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"watch": "nodemon --require dotenv/config index.js",
+		"watch": "cross-env COHORT=webpt20 nodemon index.js",
 		"start": "node index.js"
 	},
 	"devDependencies": {

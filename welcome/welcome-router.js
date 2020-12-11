@@ -4,7 +4,8 @@ const router = express.Router()
 
 router.get("/", (req, res) => {
 	res.status(200).json({
-		message: `Welcome ${process.evn.COHORT}`,
+		message: `Welcome ${process.env.COHORT}`,
+		fact: `Trial Deployment`
 	})
 })
 
